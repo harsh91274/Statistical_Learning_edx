@@ -105,9 +105,7 @@ cut4 = hierarchy.dendrogram(hierarchy.complete(X),
 plt.vlines(140,0,plt.gca().yaxis.get_data_interval()[1], colors='r', linestyles='dashed');
 fig5.savefig('NCL60_hierarchical2.jpeg');
 
-
 #%%
-
 np.random.seed(2)
 km4 = KMeans(n_clusters=4, n_init=50)
 km4.fit(X)
